@@ -9,6 +9,57 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+width: 100px;
+height: 100px;
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.titles h2 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.menu {
+    margin-left: auto;
+}
+.menu ul {
+    display:flex;
+    gap: 20px;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration:none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+
+.blog-title {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
