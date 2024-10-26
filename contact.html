@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gülüzar</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.jpg" class="logo" />
+      <div class="titles">
+        <h1>AlgoVision</h1>
+        <h2>Geleceği Şekillendiren Algoritmalar</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="articles.html">Makaleler</a></li>
+          <li><a href="contact.html" class="active">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact">
+      <h2 class="contact-header">Bize Ulaşın</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Adınız:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Adınızı girin"
+          required
+        />
+
+        <label for="email">E-posta:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-posta adresinizi girin"
+          required
+        />
+
+        <label for="message">Mesajınız:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Mesajınızı girin"
+          required
+        ></textarea>
+
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+    <h2 class="contact-header">Ofisimiz Nerede?</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.038478362075!2d28.9783588!3d41.0082376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba41605d99e3%3A0x6f9c57b6eb4b92b7!2sAyasofya!5e0!3m2!1str!2str!4v1618167264148!5m2!1str!2str"
+      class="map"
+    >
+    </iframe>
+    <button
+      id="scrollToTopBtn"
+      onmouseover="showTooltip()"
+      onmouseout="hideTooltip()"
+      onclick="scrollToTop()"
+    >
+      ⬆
+      <span id="tooltip" style="display: none">Başa Dön</span>
+    </button>
+    <footer class="footer">
+      <p>Telif Hakkı &copy; <span id="copyright-year"></span> - Algovision</p>
+    </footer>
+    <script src="copyright.js"></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>

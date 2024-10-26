@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gülüzar</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="img/logo.jpg" class="logo" />
+      <div class="titles">
+        <h1>AlgoVision</h1>
+        <h2>Geleceği Şekillendiren Algoritmalar</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="articles.html" class="active">Makaleler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="blog-title">
+      Algoritmaların Sanatta Kullanımı: Dijital Yaratıcılık
+    </h1>
+    <div class="container">
+      <img src="img/art.jpg" alt="Yapay Zeka" class="robot-img" />
+      <p>
+        Algoritmalar, geleneksel bilim ve mühendislik dünyasından çıkarak sanat
+        alanında da kendine yer bulmaya başladı. Dijital sanat, müzik ve
+        edebiyat gibi yaratıcı alanlarda algoritmalar kullanılarak benzersiz
+        eserler üretiliyor. Bilgisayarlar ve yapay zeka teknolojileri sayesinde
+        sanat dünyasında tamamen yeni bir yaratıcı süreç ortaya çıkmaktadır.
+      </p>
+
+      <p>
+        Algoritmik sanat, sanatçıların belirli kurallara dayalı görsel ya da
+        işitsel eserler üretmelerini sağlar. Örneğin,
+        <strong>generatif sanat</strong> olarak bilinen bir türde, algoritmalar
+        tarafından rastgele oluşturulan şekil ve renk kombinasyonları, sanat
+        eserlerini oluşturmak için kullanılır. Bu süreçte sanatçılar,
+        algoritmaları programlayarak esere yön verir, ancak son sonuç genellikle
+        önceden tahmin edilemez nitelikte olur.
+      </p>
+
+      <p>
+        Benzer şekilde, müzikte de algoritmalar önemli bir rol oynamaktadır.
+        Yapay zeka, belirli bir müzik tarzını analiz ederek o tarzda yeni müzik
+        parçaları üretebilir. Ayrıca, algoritmalar şiir ve hikaye yazma gibi
+        edebi eserlerin yaratılmasında da kullanılmaya başlanmıştır. Bu süreç,
+        hem insan yaratıcılığını destekler hem de yeni ifade biçimlerinin ortaya
+        çıkmasını sağlar.
+      </p>
+
+      <p>
+        Algoritmaların sanatta kullanımı, estetik anlayışımıza ve yaratıcılık
+        tanımımıza yeni boyutlar kazandırmaktadır. Sanat ve teknolojinin bu
+        buluşması, gelecekte daha özgün ve çeşitli sanat formlarının doğmasına
+        olanak sağlayacaktır.
+      </p>
+    </div>
+    <div class="author-card">
+      <img src="img/gogol.jpg" alt="Yazar" class="author-img" />
+      <div class="info">
+        <h3>Yazar: Nikolay Gogol</h3>
+        <button onclick="showAlert()">Yazar Hakkında</button>
+      </div>
+    </div>
+    <button
+      id="scrollToTopBtn"
+      onmouseover="showTooltip()"
+      onmouseout="hideTooltip()"
+      onclick="scrollToTop()"
+    >
+      ⬆
+      <span id="tooltip" style="display: none">Başa Dön</span>
+    </button>
+    <footer class="footer">
+      <p>Telif Hakkı &copy; <span id="copyright-year"></span> - Algovision</p>
+    </footer>
+    <script src="copyright.js"></script>
+    <script src="authorInfo.js"></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>

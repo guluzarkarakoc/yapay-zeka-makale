@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gülüzar</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="img/logo.jpg" class="logo" />
+      <div class="titles">
+        <h1>AlgoVision</h1>
+        <h2>Geleceği Şekillendiren Algoritmalar</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="articles.html" class="active">Makaleler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="blog-title">
+        Yapay Zeka ve Etik: İnsanlığın Yeni Sınavı
+    </h1>
+    <div class="container">
+      <img src="img/etik.jpg" alt="Yapay Zeka" class="robot-img" />
+      <p>Yapay zeka (YZ) teknolojisi hızla gelişirken,
+        bu teknolojinin etik boyutları da giderek daha fazla tartışılmaya başlandı.
+          Yapay zekanın, toplumsal hayatta ve iş dünyasında devrim yaratması beklenirken,
+           etik sorular önemli bir gündem maddesi haline geliyor. Örneğin, otonom araçların 
+           karar alma süreçlerinde karşılaştığı ahlaki ikilemler, YZ'nin etik zorluklarına dair önemli bir örnektir.
+      </p>
+    
+      <p>YZ sistemlerinin tasarımında kullanılan verilerdeki önyargılar,
+         bu sistemlerin toplum üzerindeki etkilerini şekillendirebilir.
+          Bir yapay zeka algoritmasının, toplumsal gruplar arasında adaletsiz
+           sonuçlar üretmesi, algoritmik önyargıların sonucu olabilir. 
+           Bu nedenle, yapay zeka araştırmacıları ve geliştiricileri,
+            algoritmaların etik sorumluluklar çerçevesinde tasarlanmasına dikkat etmelidir.
+        </p>
+      
+      <p>Öte yandan, iş gücü kaybı ve mahremiyet gibi konular da yapay zekanın etik yönleriyle ilgilidir.
+         Robotlar ve otomasyon sistemleri, birçok iş kolunda insanların yerini almaya başladığında, 
+         toplumsal eşitsizliklerin artabileceği öngörülüyor. Ayrıca, kişisel verilerin işlenmesi ve güvenliği de 
+         YZ'nin etik boyutunda önemli bir tartışma konusudur.</p>
+      
+      <p>Sonuç olarak, yapay zeka teknolojisinin ilerlemesi, 
+        insanlığın yeni etik sınavlarından biri olarak karşımıza çıkmaktadır.
+         Bu nedenle, YZ'nin gelişimi kadar, bu gelişimin etik kurallar çerçevesinde şekillendirilmesi
+          de kritik öneme sahiptir.</p>
+      
+    </div>
+    <div class="author-card">
+      <img src="img/gogol.jpg" alt="Yazar" class="author-img" />
+      <div class="info">
+        <h3>Yazar: Nikolay Gogol</h3>
+        <button onclick="showAlert()">Yazar Hakkında</button>
+      </div>
+    </div>
+    <button
+      id="scrollToTopBtn"
+      onmouseover="showTooltip()"
+      onmouseout="hideTooltip()"
+      onclick="scrollToTop()"
+    >
+      ⬆
+      <span id="tooltip" style="display: none">Başa Dön</span>
+    </button>
+    <footer class="footer">
+      <p>Telif Hakkı &copy; <span id="copyright-year"></span> - Algovision</p>
+    </footer>
+    <script src="copyright.js"></script>
+    <script src="authorInfo.js"></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>

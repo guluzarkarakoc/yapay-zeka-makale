@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gülüzar</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.jpg" class="logo" />
+      <div class="titles">
+        <h1>AlgoVision</h1>
+        <h2>Geleceği Şekillendiren Algoritmalar</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="active">Anasayfa</a></li>
+          <li><a href="articles.html">Makaleler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- İlk Kart -->
+      <div class="card" onclick="window.location.href='blog.html'">
+        <img src="img/yapayzeka.png" alt="Makale 1" />
+        <div class="card-body">
+          <h3 class="card-title">Yapay Zeka ile Görüntü İşleme</h3>
+          <p class="card-description">
+            Yüz Tanıma ve Derin Öğrenme Algoritmaları
+          </p>
+        </div>
+      </div>
+
+      <!-- İkinci Kart -->
+      <div class="card" onclick="window.location.href='blog2.html'">
+        <img src="img/etik.jpg" alt="Makale 2" />
+        <div class="card-body">
+          <h3 class="card-title">Yapay Zeka ve Etik</h3>
+          <p class="card-description">İnsanlığın Yeni Sınavı.</p>
+        </div>
+      </div>
+
+      <!-- Üçüncü Kart -->
+      <div class="card" onclick="window.location.href='blog3.html'">
+        <img src="img/art.jpg" alt="Makale 3" />
+        <div class="card-body">
+          <h3 class="card-title">Algoritmaların Sanatta Kullanımı</h3>
+          <p class="card-description">Dijital Yaratıcılık</p>
+        </div>
+      </div>
+    </div>
+    <button
+      id="scrollToTopBtn"
+      onmouseover="showTooltip()"
+      onmouseout="hideTooltip()"
+      onclick="scrollToTop()"
+    >
+      ⬆
+      <span id="tooltip" style="display: none">Başa Dön</span>
+    </button>
+    <footer class="footer">
+      <p>Telif Hakkı &copy; <span id="copyright-year"></span> - Algovision</p>
+    </footer>
+    <script src="copyright.js"></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>

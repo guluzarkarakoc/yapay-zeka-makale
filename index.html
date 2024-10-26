@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gülüzar</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.jpg" class="logo"/>
+      <div class="titles">
+          <h1>AlgoVision</h1>
+          <h2>Geleceği Şekillendiren Algoritmalar</h2>
+      </div>
+      <nav class="menu">
+          <ul>
+              <li><a href="index.html" class="active">Anasayfa</a></li>
+              <li><a href="articles.html">Makaleler</a></li>
+              <li><a href="contact.html">İletişim</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <section class="hero">
+            <img src="img/ai.jpg" alt="background" class="background-image" />
+            <div class="content">
+              <h1 class="hero-title">AlgoVision<br/>Geleceği Şekillendiren Algoritmalar</h1>
+              <a href="contact.html" class="cta-button">Bize Ulaşın.</a>
+          </div>
+        </section>
+        <section>
+          <div class="about-container">
+            <div class="about-card">
+                <h2>Hakkımızda</h2>
+                <p>Şirketimiz, yenilikçi çözümlerle müşterilerine en iyi hizmeti sunmayı amaçlayan bir lider firmadır. Yılların deneyimi ile sektörde fark yaratıyoruz.</p>
+            </div>
+    
+            <div class="about-card">
+                <h2>Vizyonumuz</h2>
+                <p>Amacımız, alanımızda en yenilikçi ve güvenilir marka olarak global bir etki yaratmaktır. Teknoloji ve müşteri memnuniyetini ön planda tutarak büyümeye devam ediyoruz.</p>
+            </div>
+    
+            <div class="about-card">
+                <h2>Misyonumuz</h2>
+                <p>Müşterilerimize en yüksek kalitede ürün ve hizmet sunarak, onların başarılarına katkıda bulunmak için çalışıyoruz. Çevre dostu uygulamaları benimseyerek sürdürülebilir bir gelecek yaratmayı hedefliyoruz.</p>
+            </div>
+        </div>
+        </section>
+    </main>
+    <button id="scrollToTopBtn" onmouseover="showTooltip()" onmouseout="hideTooltip()" onclick="scrollToTop()">
+      ⬆
+      <span id="tooltip" style="display: none;">Başa Dön</span>
+    </button>
+    <footer class="footer">
+      <p>Telif Hakkı &copy; <span id="copyright-year"></span> - Algovision</p>
+    </footer>
+    <script src="copyright.js"></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>
