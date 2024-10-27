@@ -216,7 +216,7 @@ header {
 
 h3 {
     color: #4CAF50;
-    margin-top: 20px;
+    margin-top: 10px;
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 5px;
 }
@@ -290,7 +290,11 @@ a {
 }
 
 .contact-header{
-   margin-left: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   border-bottom: 2px solid #4CAF50;
+   margin-top: 30px;
 }
 
 .contact .contact-form {
